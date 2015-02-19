@@ -1,0 +1,69 @@
+Godfrey Mathe 
+COS301
+
+4.1 Access Channel requirements
+
+Various other systems and users will access the Buzz system services mainly via a web browser.i.e
+this means users will have to explicitly connect to http://cs.up.ac.za to be able to use the services on Buzz according to the clients specifications.
+However, the access channel is not limited to only a web browser access but may later be extended to other systems like Mobile, Android and iOS applications. 
+
+
+4.2 Quality requirements
+
+The quality requirements that are most important to the Buzz system in particular are:
+
+4.2.1 Perfomance
+
+The system needs to respond almost instantly in terms of creation and deletion of a Buzz
+space or creation and deletion of threads as well as the management or administration of
+the whole system and it must also be able to handle high contention where a lot of users
+will want to access an actice buzz space at once and should not experience latency or be 
+susceptible to data traffic.
+
+4.2.2 Reliability
+
+The buzz system needs to be 'online' almost every time.
+The server or host for the system should then be able
+to be used by users at any time.
+
+4.2.3 Scalability
+
+This will imply that the Buzz system , when neccesary or needed can be easily converted into an
+application to be used on mobile phones.The system should be built using independent components
+to ensure pluggability when developing it for mobile.
+
+4.2.4 Security
+
+The system as a whole should be able to protect the information of students and lectures from external
+infiltration e.g possible SQL injection. Again, it should provide some form of validation mechanism to 
+ensure that only students that are allowed on specific Buzz spaces are allowed on a certain one.
+Also , the mechanism needs to block out all students who are not allowed on the system.
+
+4.2.5 Flexibility
+
+The Buzz system will need to be able to respond to internal and external changes affecting the system.
+The system should be certain on which actions to take when part of it fails.
+
+4.2.6 Maintainability
+
+The system should be able to be continually improved by developers who worked on it initially and new developers.
+The system should also have the attribute that it can be restored.
+
+4.2.7 Monitorability
+
+Buzz should provide a way such that it can be audited i.e it can keep track of the number of posts,
+keep track of dates and be able to link a post to a student.
+
+4.2.8 Integrability
+
+It should be easy to combine The Buzz system with other modules or assistance technologies like a
+Database Management System. It should be able to export data into various other modules.
+
+
+4.2.9 Usability
+
+The system must be user friendly and easy to use for users. 
+Users must be able to interact with the system i.e the user
+interface must be easy to learn and understand.
+
+
