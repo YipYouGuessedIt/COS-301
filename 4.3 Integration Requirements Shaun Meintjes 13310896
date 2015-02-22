@@ -6,7 +6,7 @@ Shaun Meintjes 13310896
 
 Database:
 
-  +A Point-to-point (Direct) channel should be used to pass requests to the database, and messages should then be passed back to the Buzz system. The TCP/IP protocol should be used to connect to the database. The API that should be used is JDBC (the Java Database Connectivity API), where the following subsection should be used Database-Protocol Driver (Pure Java Driver). 
+  A Point-to-point (Direct) channel should be used to pass requests to the database, and messages should then be passed back to the Buzz system. The TCP/IP protocol should be used to connect to the database. The API that should be used is JDBC (the Java Database Connectivity API), where the following subsection should be used Database-Protocol Driver (Pure Java Driver). 
 
 Email:
 
