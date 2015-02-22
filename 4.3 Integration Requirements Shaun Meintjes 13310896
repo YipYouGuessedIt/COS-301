@@ -1,0 +1,56 @@
+Shaun Meintjes 13310896
+
+4.3 Integration requirements
+
+4.3.1 Integration channels, protocols and API’s:
+
+Database:
+
+  A Point-to-point (Direct) channel should be used to pass requests to the database, and messages should then be passed back to the Buzz system. The TCP/IP protocol should be used to connect to the database. The API that should be used is JDBC (the Java Database Connectivity API), where the following subsection should be used Database-Protocol Driver (Pure Java Driver). 
+
+Email:
+
+  A publish/Subscribe channel should be used to pass messages from Buzz that tells the external mail system to send a certain user an email. This can be used to notify a user that his thread has been flagged for plagiarism etc.  SMTP protocol should be used to send emails after TCP/IP has been used to notify the external mail system. JavaMail is a Java API that should be used to send emails using SMTP.
+
+CS-server:
+
+  A Priority channel should be used to pass messages and requests between Buzz and the CS-server to authenticate users that log in and to access the modules that a certain user has. HTTP protocol should be used, by using the SOAP protocol to send the requests and messages.  
+
+4.3.2 Quality requirements for integration:
+
+Performance
+
+  The Buzz system needs to be able to retrieve data from the server and the database very efficiently. There should be immediate access to the server for authentication purposes. The system should be able to handle simultaneous users that requests data from the server or database. Notifications via email should also be sent instantly. 
+
+Reliability
+
+  The connections and channels to the database, server and email client should be reliable and should be accessible 24/7. All requests and messages sent between these systems should be received and executed.
+
+Scalability
+
+  The system should be able to work together with even more external systems in an easy manner. The system should also have the capacity to grow and ensure that a lot of users can use the system at the same time.
+
+Security
+
+  The connections to the external systems should have security by means of authenticating the sender of the message or request. The system should block out all malicious requests and connections. Unauthorized requests to the database and server should be flagged and should not be fulfilled. 
+
+Flexibility
+
+  The Buzz system should be able to use a new email client if needed. It should also be possible to use the Buzz system on computers and mobile devices, to ensure that the system is flexible and that all users can have instant access to the system when needed.
+
+Maintainability
+
+  The connections and channels between the Buzz system and external systems should be easy to maintain and upkeep costs in terms of man hours needed to maintain the system should be kept to a minimum.
+
+Monitorability
+
+  It should be easy to monitor the connections between the Buzz system and external systems such as the server and database. A record file should be kept of all the possible requests and messages that was sent over the connections and channels, to ensure that it is easy to identify problems or security breaches. The developers should be notified if the system goes down for any reason, I other words developers should be able to monitor the state of the Buzz system remotely.
+
+Integrability
+
+  It should be easy to integrate the Buzz system to new external systems, to ensure that the Buzz system is as efficient as possible. The Buzz system needs to have a trustworthy, though simplistic connection to the server, database and email client. 
+
+Usability
+
+  The system should be easy to use and users should not have to worry about the requests to the database or authentication from the server. This should all be done in the background without complications to the user.
+
